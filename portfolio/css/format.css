@@ -10,7 +10,7 @@
 .bodyGrid {
     display: grid;
     grid-template: repeat(4, 1fr);
-    grid-gap: 2vh;
+    grid-gap: 4vh;
 }
 
 /*  footer styling   */
