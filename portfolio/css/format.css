@@ -1,0 +1,28 @@
+/*  header styling   */
+
+.headerGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+/*  body styling   */
+
+.bodyGrid {
+    display: grid;
+    grid-template: repeat(4, 1fr);
+    grid-gap: 2vh;
+}
+
+/*  footer styling   */
+
+.footerGrid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.footerGrid ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
