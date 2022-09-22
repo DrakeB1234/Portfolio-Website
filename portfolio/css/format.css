@@ -1,4 +1,4 @@
-/*  header styling   */
+/*  header formatting   */
 
 .headerGrid {
     display: grid;
@@ -9,7 +9,7 @@
     grid-auto-rows: 10vh;
 }
 
-/*  body styling   */
+/*  body formatting   */
 
 .bodyGrid {
     display: grid;
@@ -17,7 +17,12 @@
     grid-gap: 4vh;
 }
 
-/*  footer styling   */
+.bodyMain {
+    display: flex;
+    flex-direction: column;
+}
+
+/*  footer formatting   */
 
 .footerGrid {
     display: grid;
