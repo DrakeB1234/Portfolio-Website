@@ -54,9 +54,11 @@ html {
 
 /*  body styling // Images  */
 
-.bodyMain .img {
-    width: 10vw;
-    height: 10vw;
+.bodyMain .imgCircle {
+    width: 70vw;
+    height: 70vw;
+
+    border-radius: 100%;
 }
 
 /*  body styling // text  */
