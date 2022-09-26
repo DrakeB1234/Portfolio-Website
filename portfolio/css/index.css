@@ -8,7 +8,7 @@
 }
 
 html {
-    background-color: rgb(116, 179, 234);
+    background-color: rgb(155, 204, 246);
 }
 
 /*  header styling  */
@@ -52,15 +52,6 @@ html {
     border-bottom: 0.5vh solid rgb(42, 69, 93);
 }
 
-/*  body styling // Images  */
-
-.bodyMain .imgCircle {
-    width: 70vw;
-    height: 70vw;
-
-    border-radius: 100%;
-}
-
 /*  body styling // text  */
 
 .bodyMain h1 {
@@ -83,6 +74,15 @@ html {
     color: rgb(43, 61, 76);
 }
 
+/*  body styling // Images  */
+
+.bodyMain .imgCircle {
+    width: 70vw;
+    height: 70vw;
+
+    border-radius: 100%;
+}
+
 /*  body styling // lists  */
 
 .bodyMain li {
@@ -90,6 +90,7 @@ html {
 
     color: rgb(43, 61, 76);
 }
+
 /*  footer styling  */
 
 .footerGrid {
@@ -123,4 +124,165 @@ html {
 .footerItem i{
     font-size: 60pt;
     color:rgb(193, 215, 235);
+}
+
+/*  start styling for tablets  */
+
+@media all and (min-width: 600px) {
+    /*  header styling  */
+
+    /*  header styling  // text  */
+
+    .headerGrid h2 {
+        font-size: 26pt;
+
+        color: rgb(24, 45, 63);
+    }
+
+    /*  body styling  */
+
+    .bodyGrid {
+        margin: 0 3vw 5vh 3vw;
+    }
+
+    /*  body styling // text  */
+
+    .bodyMain h1 {
+        font-size: 24pt;
+    }
+
+    .bodyMain h2 {
+        font-size: 40pt;
+    }
+
+    .bodyMain p {
+        font-size: 24pt;
+        margin: 0 2vw 0 2vw;
+    }
+
+    /*  body stying // images  */
+
+    .bodyMain .imgCircle {
+        width: 50vw;
+        height: 50vw;
+    
+        border-radius: 100%;
+    }
+
+    /*  body styling // lists  */
+
+    .bodyMain li {
+        font-size: 28pt;
+    }
+
+    /*  footer styling  */
+
+    /*  footer styling // text  */
+
+    .footerItem h1{
+        margin: 0 0 4vh 0;
+        font-size: 40pt;
+
+        color: rgb(36, 62, 87);
+    }
+
+    .footerItem a{
+        font-size: 30pt;
+        color:rgb(218, 233, 247);
+        text-decoration: none;
+    }
+
+    /*  footer styling // lists  */
+
+    .footerItem li{
+        list-style: none;
+    }
+
+    .footerItem i{
+        font-size: 80pt;
+        color:rgb(193, 215, 235);
+    }
+}
+
+/*  start styling for desktops  */
+
+@media all and (min-width: 960px) {
+    /*  header styling  */
+
+    /*  header styling  // text  */
+
+    .headerGrid h2 {
+        font-size: 26pt;
+
+        color: rgb(24, 45, 63);
+    }
+
+    /*  body styling  */
+
+    .bodyGrid {
+        margin: 5vh 8vw 5vh 8vw;
+    }
+
+    .bodyMain {
+        padding: 10vh 0 8vh 0;
+    }
+
+    /*  body styling // text  */
+
+    .bodyMain h1 {
+        font-size: 28pt;
+    }
+
+    .bodyMain h2 {
+        margin: 0 0 6vh 0;
+        font-size: 50pt;
+    }
+
+    .bodyMain p {
+        font-size: 30pt;
+        margin: 0 4vw 0 4vw;
+    }
+
+    /*  body stying // images  */
+
+    .bodyMain .imgCircle {
+        width: 20vw;
+        height: 20vw;
+    
+        border-radius: 100%;
+    }
+
+    /*  body styling // lists  */
+
+    .bodyMain li {
+        font-size: 32pt;
+    }
+
+    /*  footer styling  */
+
+    /*  footer styling // text  */
+
+    .footerItem h1{
+        margin: 0 0 4vh 0;
+        font-size: 40pt;
+
+        color: rgb(36, 62, 87);
+    }
+
+    .footerItem a{
+        font-size: 30pt;
+        color:rgb(218, 233, 247);
+        text-decoration: none;
+    }
+
+    /*  footer styling // lists  */
+
+    .footerItem li{
+        list-style: none;
+    }
+
+    .footerItem i{
+        font-size: 80pt;
+        color:rgb(193, 215, 235);
+    }
 }
