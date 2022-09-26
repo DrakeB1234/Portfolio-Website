@@ -8,7 +8,7 @@
 }
 
 html {
-    background-color: rgb(155, 204, 246);
+    background-color: rgb(234, 245, 255);
 }
 
 /*  header styling  */
@@ -46,17 +46,23 @@ html {
 
 .bodyMain {
     padding: 4vh 0 4vh 0;
-    background-color: rgb(220, 236, 251);
     text-align: center;
 
     border-bottom: 0.5vh solid rgb(42, 69, 93);
 }
 
+.bodyMainH {
+    padding: 4vh 0 4vh 0;
+    text-align: center;
+}
+
+
 /*  body styling // text  */
 
-.bodyMain h1 {
+.bodyMain ,.bodyMainH h1 {
     margin: 1vh 0 1vh 0;
     font-size: 18pt;
+    z-index: 2;
 
     color: rgb(90, 120, 146);
 }
@@ -76,7 +82,7 @@ html {
 
 /*  body styling // Images  */
 
-.bodyMain .imgCircle {
+.bodyMainH .imgCircle {
     width: 70vw;
     height: 70vw;
 
@@ -131,6 +137,10 @@ html {
 @media all and (min-width: 600px) {
     /*  header styling  */
 
+    .headerGrid {
+        border-bottom: 0.2vh solid rgb(42, 69, 93);
+    }
+
     /*  header styling  // text  */
 
     .headerGrid h2 {
@@ -139,13 +149,22 @@ html {
         color: rgb(24, 45, 63);
     }
 
+    .headerGrid i {
+        margin-left: 4vw;
+    }
+
     /*  body styling  */
 
     .bodyGrid {
-        margin: 0 3vw 5vh 3vw;
+        margin: 4vh 3vw 5vh 3vw;
     }
 
     /*  body styling // text  */
+
+    .bodyMainH h1 {
+        margin-left: 8vw;
+        font-size: 24pt;
+    }
 
     .bodyMain h1 {
         font-size: 24pt;
@@ -162,9 +181,9 @@ html {
 
     /*  body stying // images  */
 
-    .bodyMain .imgCircle {
-        width: 50vw;
-        height: 50vw;
+    .bodyMainH .imgCircle {
+        width: 40vw;
+        height: 40vw;
     
         border-radius: 100%;
     }
@@ -182,25 +201,17 @@ html {
     .footerItem h1{
         margin: 0 0 4vh 0;
         font-size: 40pt;
-
-        color: rgb(36, 62, 87);
     }
 
     .footerItem a{
         font-size: 30pt;
-        color:rgb(218, 233, 247);
-        text-decoration: none;
     }
 
     /*  footer styling // lists  */
 
-    .footerItem li{
-        list-style: none;
-    }
-
-    .footerItem i{
-        font-size: 80pt;
-        color:rgb(193, 215, 235);
+    .footerItem i {
+        font-size: 70pt;
+        margin: 0 4vw 0 4vw;
     }
 }
 
@@ -208,6 +219,10 @@ html {
 
 @media all and (min-width: 960px) {
     /*  header styling  */
+
+    .headerGrid {
+        border-bottom: 0.3vh solid rgb(42, 69, 93);
+    }
 
     /*  header styling  // text  */
 
@@ -217,17 +232,31 @@ html {
         color: rgb(24, 45, 63);
     }
 
+    .headerGrid i {
+        margin-left: 4vw;
+    }
+
     /*  body styling  */
 
     .bodyGrid {
-        margin: 5vh 8vw 5vh 8vw;
+        margin: 5vh 4vw 5vh 4vw;
+    }
+
+    .bodyMainH {
+        padding: 5vh 0 5vh 0;
     }
 
     .bodyMain {
         padding: 10vh 0 8vh 0;
     }
+ 
 
     /*  body styling // text  */
+
+    .bodyMainH h1 {
+        font-size: 28pt;
+        margin-left: 8vw;
+    }
 
     .bodyMain h1 {
         font-size: 28pt;
@@ -245,7 +274,7 @@ html {
 
     /*  body stying // images  */
 
-    .bodyMain .imgCircle {
+    .bodyMainH .imgCircle {
         width: 20vw;
         height: 20vw;
     
@@ -265,24 +294,16 @@ html {
     .footerItem h1{
         margin: 0 0 4vh 0;
         font-size: 40pt;
-
-        color: rgb(36, 62, 87);
     }
 
     .footerItem a{
         font-size: 30pt;
-        color:rgb(218, 233, 247);
-        text-decoration: none;
     }
 
     /*  footer styling // lists  */
 
-    .footerItem li{
-        list-style: none;
-    }
-
     .footerItem i{
+        margin: 0 4vw 0 4vw;
         font-size: 80pt;
-        color:rgb(193, 215, 235);
     }
 }
