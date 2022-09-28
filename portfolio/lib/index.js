@@ -8,7 +8,7 @@ app.use(express.json())
 const courses = [
     { id: 1, name: 'course1'},
     { id: 2, name: 'course2'},
-    { id: 3, name: 'course3'},
+    { id: 3, name: 'course3'}
 ];
 
 /*
@@ -42,11 +42,36 @@ app.get('/api/posts/:year/:month', (req, res) => {
 });
 
 app.post('/api/courses', (req, res) => {
+    if (!req.body.name || req.body.name.length < 3) {
+        // 400 bad request
+        res.status(400).send('Name is required and minimum characters of 3');
+        return;
+    }
+
     const course = {
         id: courses.length + 1,
         name: req.body.name
     };
     courses.push(course);
+    res.send(course);
+});
+
+app.put('/api/courses/:id', (req, res) => {
+    // Look up the course
+    // if not existing, return 404
+    const course = courses.find(c => c.id === parseInt(req.params.id));
+
+    // validate
+    // if invalid, return 400 - bad request
+    if (!req.body.name || req.body.name.length < 3) {
+        // 400 bad request
+        res.status(400).send('Name is required and minimum characters of 3');
+        return;
+    }
+
+    // update course
+    course.name = req.body.name;
+    // return the update course
     res.send(course);
 });
 

@@ -14,3 +14,5 @@ All other parameters are called route parameters
 
 using chrome app (postman) you can send post requests in order to test
 endpoints and breaks
+
+JOI extension of node.js can be used for more complex input validations (bigger apps)
