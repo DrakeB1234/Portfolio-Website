@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
 
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 html {
-    background-color: rgb(234, 245, 255);
+    background-color: rgb(64, 110, 152);
 }
 
 /*  header styling  */
@@ -40,29 +40,35 @@ html {
 
 /*  body styling  */
 
-.bodyGrid {
-    margin: 0 0 5vh 0;
-}
 
 .bodyMain {
     padding: 4vh 0 4vh 0;
     text-align: center;
 
+    border-radius: 2vh 2vh 0 0;
     border-bottom: 0.5vh solid rgb(42, 69, 93);
 }
 
 .bodyMainH {
     padding: 4vh 0 4vh 0;
     text-align: center;
+
+    background-color: rgb(220, 234, 252);
+}
+
+.bodyMainPItem {
+    font-size: 24pt;
+    padding: 8vh 5vw 8vh 5vw;
+
+    border-radius: 5vh;
+    background-color: rgba(18, 49, 76, 0.6);
 }
 
 
 /*  body styling // text  */
 
 .bodyMain ,.bodyMainH h1 {
-    margin: 1vh 0 1vh 0;
     font-size: 18pt;
-    z-index: 2;
 
     color: rgb(90, 120, 146);
 }
@@ -71,13 +77,24 @@ html {
     margin: 0 0 4vh 0;
     font-size: 30pt;
 
-    color: rgb(40, 73, 103);
+    color: rgb(71, 133, 200);
 }
 
 .bodyMain p {
     font-size: 20pt;
+    text-align: left;
 
-    color: rgb(43, 61, 76);
+    color: rgba(210, 231, 252, 0.8);
+}
+
+.bodyMainPItem h2 {
+    font-size: 30pt;
+
+    color: rgb(177, 213, 252);
+}
+
+.bodyMainPItem p {
+    font-size: 24pt;
 }
 
 /*  body styling // Images  */
@@ -87,6 +104,11 @@ html {
     height: 70vw;
 
     border-radius: 100%;
+}
+
+.bodyMainPItem img {
+    height: 40vh;
+    filter:brightness(20%);
 }
 
 /*  body styling // lists  */
@@ -156,7 +178,7 @@ html {
     /*  body styling  */
 
     .bodyGrid {
-        margin: 4vh 3vw 5vh 3vw;
+        margin: 4vh 0 5vh 0;
     }
 
     /*  body styling // text  */
@@ -171,12 +193,12 @@ html {
     }
 
     .bodyMain h2 {
-        font-size: 40pt;
+        font-size: 60pt;
     }
 
     .bodyMain p {
         font-size: 24pt;
-        margin: 0 2vw 0 2vw;
+        margin: 0 10vw 0 10vw;
     }
 
     /*  body stying // images  */
@@ -227,7 +249,7 @@ html {
     /*  header styling  // text  */
 
     .headerGrid h2 {
-        font-size: 26pt;
+        font-size: 16pt;
 
         color: rgb(24, 45, 63);
     }
@@ -239,7 +261,7 @@ html {
     /*  body styling  */
 
     .bodyGrid {
-        margin: 5vh 4vw 5vh 4vw;
+        margin: 5vh 0 5vh 0;
     }
 
     .bodyMainH {
@@ -247,14 +269,14 @@ html {
     }
 
     .bodyMain {
-        padding: 10vh 0 8vh 0;
+        padding: 15vh 0 15vh 0;
     }
  
 
     /*  body styling // text  */
 
     .bodyMainH h1 {
-        font-size: 28pt;
+        font-size: 20pt;
         margin-left: 8vw;
     }
 
@@ -264,12 +286,12 @@ html {
 
     .bodyMain h2 {
         margin: 0 0 6vh 0;
-        font-size: 50pt;
+        font-size: 60pt;
     }
 
     .bodyMain p {
-        font-size: 30pt;
-        margin: 0 4vw 0 4vw;
+        font-size: 20pt;
+        margin: 0 14vw 0 14vw;
     }
 
     /*  body stying // images  */
@@ -293,17 +315,17 @@ html {
 
     .footerItem h1{
         margin: 0 0 4vh 0;
-        font-size: 40pt;
+        font-size: 30pt;
     }
 
     .footerItem a{
-        font-size: 30pt;
+        font-size: 26pt;
     }
 
     /*  footer styling // lists  */
 
     .footerItem i{
         margin: 0 4vw 0 4vw;
-        font-size: 80pt;
+        font-size: 50pt;
     }
 }

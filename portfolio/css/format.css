@@ -14,7 +14,7 @@
 .bodyGrid {
     display: grid;
     grid-template: repeat(4, 1fr);
-    grid-gap: 4vh;
+    grid-gap: 2vh;
 }
 
 .bodyMain {
@@ -25,6 +25,13 @@
 .bodyMainH {
     display: flex;
     flex-direction: column;
+}
+
+.bodyMainP {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x:auto;
 }
 
 /*  footer formatting   */
@@ -106,13 +113,13 @@
     .bodyGrid {
         display: grid;
         grid-template: repeat(4, 1fr);
-        grid-gap: 4vh;
     }
 
     .bodyMainH {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        overflow:auto;
     }
 
     /*  body formatting // image card  */
