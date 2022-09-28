@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "this is a repository for my first project using Git and Github!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrakeB1234/Portfolio-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrakeB1234/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/DrakeB1234/Portfolio-Website#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
