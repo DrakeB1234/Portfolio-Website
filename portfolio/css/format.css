@@ -27,11 +27,26 @@
     flex-direction: column;
 }
 
-.bodyMainP {
+.bodyCardList {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow-x:auto;
+    overflow-x:scroll;
+}
+
+.bodyCard {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*  body animations  */
+
+.bodyCard:hover {
+    transform: translateY(-1.5rem);
+}
+
+.bodyCard:hover~.bodyCard {
+    transform: translateX(2vw);
 }
 
 /*  footer formatting   */
