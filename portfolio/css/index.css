@@ -14,6 +14,7 @@ html {
 /*  header styling  */
 
 .headerGrid {
+
     background-color: rgb(254, 254, 254);
 
     border-bottom: 0.5vh solid rgb(42, 69, 93);
@@ -25,17 +26,36 @@ html {
     font-size: 20pt;
 
     color: rgb(24, 45, 63);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
 }
+
 
 
 .headerGrid i {
     margin-right: 2vw;
+
 }
 
 .headerGrid a, a:visited, a:active{
     text-decoration: none;
-    color: rgb(24, 45, 63);
+
+    padding: 5px 40px;
+    background-color: #406e97;
+    /* border: 1px solid #406e97; */
+    color: #f5f5f5;
+    border-radius: 2.5px;
+    box-shadow: rgba(99, 99, 99, .75) 0px 2px 8px 0px;
+    transition: all .25s ease;
+
 }
+
+.headerGrid a:hover{
+    background-color: #f5f5f5;
+    color: #406e97;
+}
+
 
 
 /*  body styling  */
@@ -62,13 +82,14 @@ html {
     margin: 4vh 1vw 0 1vw;
     padding: 5vh 0 5vh 0;
 
-    border-radius: 5vh;
+    border-radius: 15px;
     background-color: rgba(9, 27, 43, 0.6);
+    box-shadow: rgba(99, 99, 99, .8) 0px 2px 8px 0px;
+
 }
 
 
 /*  body styling // text  */
-
 .bodyMain ,.bodyMainH h1 {
     font-size: 18pt;
 
@@ -104,7 +125,7 @@ html {
 .bodyMainH .imgCircle {
     width: 70vw;
     height: 70vw;
-
+    box-shadow: rgba(99, 99, 99, 1) 0px 2px 8px 0px;
     border-radius: 100%;
 }
 
