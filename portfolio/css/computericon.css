@@ -1,3 +1,84 @@
-#icon-computer {
-    opacity: 0;
+#cursor {
+    animation: moveCursor 5s infinite;
 }
+
+@keyframes moveCursor {
+    0% {
+        transform: translateX(0) translateY(-23%);
+    }
+    50% {
+        transform: translateX(-20%) translateY(-43%);
+    }
+    75% {
+        transform: translateX(-10%) translateY(-23%);
+    }
+    100% {
+        transform: translateX(0) translateY(-23%);
+    }
+}
+
+/* animation for right app screen */
+
+#rect1 {
+    animation: blockRight 5s infinite;
+}
+
+#rect2, #rect3, #rect4, #rect5 {
+    animation: blockRight 2.5s infinite;
+}
+
+
+@keyframes blockRight {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* animation for left app screen */
+
+#icon-computer-screen-left {
+    animation: appear1 5s infinite;
+}
+
+
+
+@keyframes appear1 {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20%) translateY(-20%);
+    }
+    75% {
+        transform: translateX(-3%);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+    /* animation for blink cursor */
+    #blinkcursor {
+        animation: blink 0.8s infinite;
+    }
+    
+    
+    
+    @keyframes blink {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
