@@ -2,12 +2,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
-nav.container {
-    height: 100vh;
-    width: 100vw;
+main.container {
+    width: 100%;
+    overflow: hidden;
 }
 
-nav.container img {
-    height: 100%;
-    width: 100vw;
-}
+nav.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    place-items: center;
+    height: 100vh;
+}   
+
+nav.container .information-container{
+    font-size: 2rem;
+}   
