@@ -8,12 +8,20 @@
     --orange-dark: #6e492a;
     --orange-medium: #DFA06E;
     --orange-light: #f7b089;
+
+    --blue-medium: #6ab9d4;
+
+    --grey-dark: #263033;
+    --grey-medium: #505f64;
+
+    --white:rgb(255, 255, 255);
 }
 
 /* scroll-snap */
 div.scroll-snap {
-    scroll-snap-type: y proximity;
-    overflow: hidden;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
 }
 
 /* main container 1 */
@@ -35,6 +43,7 @@ nav.container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        color: var(--grey-dark);
     }   
 
     nav.container .information-container img{
@@ -46,18 +55,54 @@ nav.container {
 
     nav.container .information-container h1{
         font-size: 3rem;
-        text-shadow: 0 0.5em 0.5em var(--orange-dark);
+        text-shadow: 0 0.3em 0.8em var(--orange-dark);
     }
 
     nav.container .information-container h2{
         font-size: 2rem;
-        text-shadow: 0 0.5em 1em var(--orange-dark);
+        text-shadow: 0 0.3em 0.8em var(--orange-dark);
     }
 
 /* main container 2 */
 main.container2 {
+    height: 100vh;
     width: 100%;
-    background-color: var(--orange-medium);
+    background-color: var(--blue-medium);
     overflow: hidden;
     scroll-snap-align: start;
 }
+
+    main.container2 > h1 {
+        display: flex;
+        justify-content: center;
+        margin: 1em 0 1em 0;
+        text-shadow: 0 0.3em 0.7em var(--grey-dark);
+        font-size: 3rem;
+        color: var(--grey-dark);
+    }
+
+    article.card-container {
+        display: grid;
+        place-content: center;
+        grid-template-columns: repeat(auto-fit, clamp(5em, 100%, 25em));
+        margin: 1em;
+        gap: 1em;
+    }   
+
+    article.card-container .card {
+        padding: 1em;
+        border-radius: 8% / 15%;
+        color: var(--white);
+        background-color: var(--grey-medium);
+    }
+
+    article.card-container .card h1{
+        margin: 0.5em 0 1em 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    article.card-container .card h2{
+        font-size: 1.5rem;
+        text-align: left;
+    }
